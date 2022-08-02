@@ -25,6 +25,28 @@ a:visited {
     color: #12137b;
 }
 
+button {
+    font-size: inherit;
+    font-family: inherit;
+    color: #fff;
+    background-color: #4042e3;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-width: 0;
+    min-width: 30ch;
+    box-shadow: 0px 1px 3px #313131;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+button:active {
+    outline: none;
+    box-shadow: inset 0px 1px 3px #12137b;
+}
+
 .left-side {
     display: flex;
     flex-direction: column;
@@ -67,32 +89,29 @@ a:visited {
     flex-direction: column;
 }
 
+.form-element p {
+    margin: 0;
+    color: #e21d1f;
+    display: none;
+}
+
 label {
-    font-size: 0.7rem
+    font-size: 0.7rem;
 }
 
 input {
-    min-width: 50ch;
+    min-width: 30vw;
 }
 
-button {
-    font-size: inherit;
-    font-family: inherit;
-    color: #fff;
-    background-color: #4042e3;
-    padding: 1rem;
-    border-radius: 1rem;
-    border-width: 0;
-    min-width: 30ch;
-    box-shadow: 0px 1px 3px #313131;
+input:focus {
+    border: 1px solid #4042e3;
 }
 
-button:hover {
-    cursor: pointer;
-    opacity: 0.8;
+input:not(:focus):invalid {
+    color: #e21d1f;
+    border: 2px solid #e21d1f;
 }
 
-button:active {
-    outline: none;
-    box-shadow: inset 0px 1px 3px #12137b;
+input:not(:focus):invalid+p {
+    display: initial;
 }
