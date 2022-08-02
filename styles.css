@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    min-height: 100vh;
+}
+
+a {
+    color: #4042e3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #12137b;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 0.5rem 1rem;
+    min-width: 28rem;
+    background: url('images/background.jpg') center no-repeat;
+    background-size: 100%;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.right-side .text {
+    margin-right: 1rem;
+}
+
+.form-container {
+    background-color: #ececec;
+}
+
+.signup-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    padding: 1rem;
+    box-shadow: 0px 1px 3px #313131;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.7rem
+}
+
+input {
+    min-width: 50ch;
+}
+
+button {
+    font-size: inherit;
+    font-family: inherit;
+    color: #fff;
+    background-color: #4042e3;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-width: 0;
+    min-width: 30ch;
+    box-shadow: 0px 1px 3px #313131;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+button:active {
+    outline: none;
+    box-shadow: inset 0px 1px 3px #12137b;
+}

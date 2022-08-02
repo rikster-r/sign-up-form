@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-Up Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="left-side">
+    <div class="text">
+      <a href="https://www.freepik.com/vectors/user-login">User login vector created by vectorjuice - www.freepik.com</a>
+      <p>&copy; 2022 rikster-r</p>
+    </div>
+  </div>
+
+  <div class="right-side">
+    <div class="text">
+      <h3>
+        This is not a real online service! You know you need something like
+        this in your life to help you realize your deepest dreams. Sign up
+        <em>now</em> to get started.
+      </h3>
+      <h3>You <em>know</em> you want to.</h3>
+    </div>
+
+    <div class="form-container">
+      <form action="#" method="post" class="signup-form">
+
+        <div class="form-element">
+          <label for="first-name">FIRST NAME</label>
+          <input type="text" name="firstName" id="first-name" required>
+        </div>
+
+        <div class="form-element">
+          <label for="second-name">SECOND NAME</label>
+          <input type="text" name="secondName" id="second-name">
+        </div>
+
+        <div class="form-element">
+          <label for="email">EMAIL</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="form-element">
+          <label for="phone-number">PHONE NUMBER</label>
+          <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" max="20" required>
+        </div>
+
+        <div class="form-element">
+          <label for="password">PASSWORD</label>
+          <input type="password" name="password" id="password">
+        </div>
+
+        <div class="form-element">
+          <label for="password-confirm">CONFIRM PASSWORD</label>
+          <input type="password" name="passwordConfirm" id="password-confirm">
+        </div>
+      </form>
+    </div>
+
+    <div class="container">
+      <button type="submit" form="signup-form">Create Account</button>
+      <p>Already have an account? <a href="#">Log in</a></p>
+    </div>
+  </div>
+</body>
+
+</html>
