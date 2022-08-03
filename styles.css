@@ -104,7 +104,8 @@ input {
 }
 
 input:focus {
-    border: 1px solid #4042e3;
+    outline:none;
+    border: 3px solid #4042e3;
 }
 
 input:not(:focus):invalid {
@@ -112,6 +113,6 @@ input:not(:focus):invalid {
     border: 2px solid #e21d1f;
 }
 
-input:not(:focus):invalid+p {
+input:not(:focus):invalid + p {
     display: initial;
 }
